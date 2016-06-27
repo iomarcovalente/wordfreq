@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content=" #00f28f" />
+  </head>
+  <body>
+
+  <div class="md-col-10 textcontainer">
+    <h1 id="appname">Frequent words counter</h1> 
+    
+    <textarea class="txtarea" id="input" placeholder="Type Your Text Here..." autofocus="true"></textarea>
+    <div class="btnwrap">
+      <button id="count" onclick="counter()"></button>
+      <button id="clear" onclick="clearText()"></button>
+    </div>
+  </div>
+
+  <div id="wordsList" class="md-col-10 results">
+
+    <ul id="ulist">
+      <!-- generated <li>'s -->
+    </ul>
+  </div>
+
+  <div id="parags" class="md-col-10"></div>
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="script.js"></script>
+
+  </body>
+</html>
